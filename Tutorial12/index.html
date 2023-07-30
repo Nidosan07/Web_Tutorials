@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Registration Form</h1>
+<form action="index.php" method="post">
+<input type="text" name="firstname" placeholder="First Name">
+<input type="text" name="lastname" placeholder="Last Name">
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+    Gender
+<input type="radio" name="gender" value="male"> Male 
+<input type="radio" name="gender" value="female"> Female
+<br>
+<br>
+Acadamic Year 
+<select name="academic_year">
+  <option value="1st Year">1st Year</option>
+  <option value="2nd Year">2nd Year</option>
+  <option value="3rd Year">3rd Year</option>
+  <option value="4th Year">4th Year</option>
+</select>
+<input type="email" name="email" placeholder="Email">
+<input type="tel" name="phone_no" placeholder="Phone Number">
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
